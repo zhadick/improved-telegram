@@ -1,0 +1,101 @@
+
+
+.calc {
+    margin: 70px auto;
+    width: 300px;
+    height: 500px;
+    border:1px solid #000;
+    border-radius: 7px;
+    background: rgb(15, 14, 14);
+    color: #fff;
+    font-family: Arial;
+    padding: 15px;
+    box-shadow: 1px 1px 1px #342929;
+
+}
+
+.calc {
+    position:relative;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container button {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 10px;
+}
+.container button:nth-child(2) {
+    background-color: yellow;
+}
+
+.container button:last-child {
+    background-color: yellowgreen;
+    margin-right: 0;
+}
+
+.container {
+    position: absolute;
+    top:5px;
+    left:5px;
+}
+
+
+.string {
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    margin-bottom: 20px;
+    height: 98%;
+}
+
+.string p {
+    text-align: right;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-areas:
+    "AC plus-minus percent division"
+    "seven eigth nine multi"
+    "four five six minus"
+    "one two three plus"
+    "zero zero dot equal";
+    grid-gap: 9px;
+    justify-items: center;
+}
+
+.btn {
+    width: 65px;
+    height: 65px;
+    background: rgb(59, 55, 55);
+    border-radius: 1%;
+    text-align: center;
+    line-height: 70px;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btn.zero{
+    grid-area: zero;
+    width: 100%;
+    border-radius: 1px;
+}
+
+
+.btn.bg-grey {
+    background: #706b6b;
+}
+
+.btn.bg-orange {
+    background: #e46409;
+}
+
